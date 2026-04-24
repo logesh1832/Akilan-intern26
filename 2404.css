@@ -1,0 +1,267 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.box {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #333;
+}
+
+.content {
+    width: 100%;
+    height: 100px;
+    background-color: #f0f0f0;
+}
+
+.card-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    height: 400px;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("your-image.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-gradient {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+
+a {
+    text-decoration: none;
+    color: #3498db;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+
+.nav-link {
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    background-color: #f0f0f0;
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.fade {
+    opacity: 0;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+}
+
+font : family=Roboto&family=Open+Sans;
+
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.playwrite-nz-guides-regular {
+  font-family: "Playwrite NZ Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+    /* Add margin-bottom */
+    margin-bottom: 1rem;
+}
+
+.lead {
+    /* Larger font-size */
+    font-size: 1.25rem;
+    /* Lighter font-weight */
+    font-weight: 300;
+}
+
+/* Task 3: Heading typography scale */
+h1, h2, h3, h4, h5, h6 {
+    /* Add heading font-family */
+    font-family: 'Courier New', Courier, monospace;
+    /* Add line-height for headings */
+    line-height: normal;
+}
+
+h1 { font-size: 2.5rem/* 2.5rem */; }
+h2 { font-size: 2rem/* 2rem */; }
+h3 { font-size: 1.75rem/* 1.75rem */; }
+h4 { font-size: 1.5rem/* 1.5rem */; }
+h5 { font-size: 1.25rem/* 1.25rem */; }
+h6 { font-size:1rem /* 1rem */; }
+
+
+/* Task 5: Link styling */
+a {
+    /* Remove underline */
+    text-decoration: none;
+    /* Add color */
+    color: #3489db;
+    /* Add transition */
+    transition: all;
+}
+
+a:hover {
+    /* Add underline on hover */
+    text-decoration: underline;
+    /* Darker color */
+    color: #2980b9;
+}
+
+/* Task 6: Inline-block navigation */
+.nav {
+    /* Center text */
+    text-align: center;
+    /* Add padding */
+    padding: 0%;
+}
+
+.nav-item {
+    /* Display inline-block */
+    display: inline-block;
+    /* Add horizontal padding */
+    padding: 15px;
+    /* Uppercase text */
+    text-transform: uppercase;
+    /* Letter spacing */
+    letter-spacing: 1px;
+}
+
+.nav-item:hover {
+    /* Add background color on hover */
+    background-color: #f0f0f0;
+}
+
+
+/* Task 6: Inline-block navigation */
+.nav {
+    /* Center text */
+    text-align: center;
+    /* Add padding */
+    padding: 0%;
+}
+
+.nav-item {
+    /* Display inline-block */
+    display: inline-block;
+    /* Add horizontal padding */
+    padding: 15px;
+    /* Uppercase text */
+    text-transform: uppercase;
+    /* Letter spacing */
+    letter-spacing: 1px;
+}
+
+
+/* Task 7: Text shadows */
+h1 {
+    /* Add subtle text-shadow */
+    text-shadow: 1px 1px 2px(0,0,0,0.1);
+}
+
+.hero-title {
+    /* Add prominent text-shadow */
+    text-shadow:2px 2px 4px rgba(0,0,0,0.3) ;
+    /* Optional: add color for contrast */
+    color: aliceblue;
+}
+
+
+/* Task 8: Visibility utility classes */
+.hidden {
+    /* Hide completely, no space */
+    display: none;
+}
+
+.visible {
+    /* Show as block */
+    display: block;
+}
+
+.invisible {
+    /* Hidden but keeps space */
+    visibility: hidden;
+}
+
+blockquote {
+    /* Italic style */
+    font-style: italic;
+    /* Larger font-size */
+    font-size: 1.2rem;
+    /* Left border */
+    border-left: 4px solid #3498db;
+    /* Left padding */
+    padding-left: 20px;
+    /* Gray color */
+    color: #666;
+}
+
