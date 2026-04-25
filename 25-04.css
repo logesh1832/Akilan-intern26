@@ -1,0 +1,455 @@
+/* Q1: Fixed Header */
+.header {
+    /* Fixed positioning */
+    position: fixed;
+    
+    /* Pin to top, full width */
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    
+    /* Background */
+    background-color: white;
+    /* Padding */
+    padding: 15px;
+    /* Shadow for depth */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 100;
+    
+}
+
+
+/* Q2: Card with Badge */
+.card {
+    /* Create positioning context */
+    position:relative;
+    /* Card styling */
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+.notification-badge {
+    /* Absolute positioning */
+    position:absolute;
+    /* Top-right corner with negative offset */
+    top:-8px;
+    right:-8px;
+    
+    /* Circle styling */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #e74c3c;
+    color: white;
+    font-size: 12px;
+}
+
+
+/* Q3: Centered Modal */
+.modal {
+    /* Fixed positioning */
+    position: fixed;
+    /* Center point positioning */
+    top: 50%;
+    left: 50%;
+    /* Transform to truly center */
+    transform: translate(-50%, -50%);
+    /* Z-index */
+    z-index: 1000;
+    /* Styling */
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Q4: Sticky Sidebar */
+.sidebar {
+    /* Sticky positioning */
+    position: sticky;
+    /* Stick 20px from top */
+    top: 20px;
+    
+    /* Width */
+    width: 250px;
+    /* Styling */
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+
+/* Q5: Modal Overlay */
+.overlay {
+    /* Fixed to viewport */
+    position: fixed;
+    
+    /* Cover entire viewport */
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+    /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    /* Z-index below modal */
+    z-index: 999;
+}
+
+/* Task 1: Fixed Header */
+.header {
+    /* Position fixed */
+    position: fixed;
+    
+    /* Pin to top */
+    top: 0%;
+    
+    /* Full width using left and right */
+    left: 0%;
+    right: 0%;
+    
+    /* Background color */
+    background-color: aliceblue;
+    
+    /* Padding */
+    padding: 0%;
+    
+    /* Z-index for stacking */
+    z-index: 100;
+    
+}
+
+
+/* Task 3: Sticky Sidebar */
+.sidebar {
+    /* Position sticky */
+    position: sticky;
+    /* Stick below header */
+    top: 90px;
+    
+    /* Fixed width */
+    width: 250px;
+    /* Height */
+    height: fit-content;
+}
+
+
+/* Task 4: Card with positioned badge */
+.card {
+
+    /* Relative positioning for context */
+    position: relative;
+    
+    /* Other card styles */
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+.badge {
+    /* Absolute positioning */
+    position: absolute;
+    /* Position at top-right corner */
+    top: -10px;
+    right: -10px;
+    
+    /* Circle styling */
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+}
+
+/* Task 5: Modal Overlay */
+.modal-overlay {
+    /* Fixed to cover viewport */
+    position: fixed;
+    
+    /* Cover all sides */
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.5);
+    
+    /* Z-index below modal, above content */
+    z-index: 999;
+    
+}
+
+
+/* Task 6: Centered Modal */
+.modal {
+    /* Fixed positioning */
+    position: fixed;
+    /* Center with 50% positioning */
+    top: 50%;
+    left: 50%;
+    /* Translate to truly center */
+    transform: translate(-50%,-50%);
+    /* High z-index */
+    z-index: 1000;
+    /* Modal styling */
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    min-width: 400px;
+}
+
+
+/* Task 7: Floating Action Button */
+.fab {
+    /* Fixed positioning */
+    position: fixed;
+    /* Bottom-right corner */
+    bottom: 30px;
+    right: 30px;
+    /* Z-index */
+    z-index: 100;
+    /* Circle styling */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+    /* Shadow */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+/* Task 8: Scrollable Content */
+.scroll-container {
+    /* Fixed height */
+    height:400px ;
+    /* Scrollable overflow */
+    overflow-y:auto ;
+    /* Padding */
+    padding: 20px;
+    /* Border for visibility */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+
+/* Q1: Center content in flex container */
+.center-container {
+    /* Enable flexbox */
+    display: flex;
+    
+    /* Center horizontally (main axis) */
+    justify-content: center;
+    
+    /* Center vertically (cross axis) */
+    align-items: center;
+    /* Minimum height */
+    min-height: 300px;
+}
+
+
+/* Q2: Navigation bar layout */
+.navbar {
+    /* Enable flexbox */
+    display: flex;
+    /* Logo left, links right */
+    justify-content: space-between;
+    /* Vertically center items */
+    align-items: center;
+    /* Padding */
+    padding: 15px 20px;
+}
+
+
+/* Q3: Equal columns */
+.columns {
+    /* Enable flexbox */
+    display: flex;
+    /* Gap between columns */
+    gap: 20px;
+}
+
+.column {
+    /* Equal width - grow equally */
+    flex: 1;
+    /* Styling */
+    padding: 20px;
+    background: #e9ecef;
+}
+
+/* Q4: Responsive card grid */
+.card-grid {
+    /* Enable flexbox */
+    display: flex;
+    /* Allow wrapping */
+    flex-wrap: wrap;
+    /* Gap between cards */
+    gap: 20px;
+}
+
+.card {
+    /* Flexible with 280px minimum */
+    flex: 1 1 280px(grow,shrink,280px minimum width);
+}
+
+/* Q5: Sidebar layout */
+.layout {
+    /* Enable flexbox */
+    display: flex;
+    /* Minimum height */
+    min-height: 400px;
+}
+
+.sidebar {
+    /* Fixed 250px, no grow, no shrink */
+    flex: 0 0 250px;
+    
+}
+
+.main {
+    /* Fill remaining space */
+    flex: 1;
+}
+
+
+/* Task 1: Navigation Bar */
+.navbar {
+    /* Enable flexbox */
+    display: flex;
+    /* Logo left, links right */
+    justify-content: space-between;
+    /* Vertically center items */
+    align-items: center;
+    /* Add padding */
+    padding: 15px 30px;
+    background: #2c3e50;
+}
+
+.nav-links {
+    /* Enable flexbox for links */
+    display: flex;
+    /* Add gap between links */
+    list-style: none;
+    gap: 20px;
+    
+}
+
+/* Task 2: Centered Hero */
+.hero {
+    /* Enable flexbox */
+    display: flex;
+    /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+    /* Minimum height */
+    min-height: 400;
+    /* Stack content vertically */
+    flex-direction: column;
+    
+    /* Add gap between elements */
+    box-sizing: border-box;
+    
+    /* Text center */
+    text-align: center;
+}
+
+    .container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    }
+
+    .column {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    }
+
+/* Task 4: Responsive Card Grid */
+.card-grid {
+    /* Enable flexbox */
+    display: flex;
+    /* Allow wrapping */
+    flex-wrap: wrap;
+    /* Gap between cards */
+    gap: 20px;
+}
+
+.card {
+    /* Flexible sizing with 300px minimum */
+    flex: 1 1 300px(grow,shrink,min 300px);
+    /* Card styling */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+/* Task 5: Sidebar Layout */
+.layout {
+    /* Enable flexbox */
+    display: flex;
+    /* Minimum height */
+    min-height: 500px;
+}
+
+.sidebar {
+    /* Fixed 250px width, no grow/shrink */
+    flex: 0 0 250px (no grow, no shrink, 250px);
+    /* Styling */
+    background: #34495e;
+    color: white;
+    padding: 20px;
+}
+
+.main-content {
+    /* Fill remaining space */
+    flex: 1;
+    /* Padding */
+    padding: 20px;
+}
+
+
+/* Task 6: Footer */
+.footer {
+    /* Enable flexbox */
+    display: flex;
+    /* Even spacing between items */
+    justify-content: space-evenly;
+    /* Vertically center */
+    align-items: center;
+    /* Padding and background */
+    padding: 30px;
+    background: #2c3e50;
+    color: white;
+}
+
+
+/* Task 7: Testimonial Card */
+.testimonial {
+    /* Enable flexbox */
+    display: flex;
+    /* Stack vertically */
+    flex-direction: column;
+    /* Center items horizontally */
+    align-items: center;
+    /* Gap between elements */
+    gap: 15px;
+    /* Center text */
+    text-align: center;
+    
+    /* Padding */
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
