@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enhanced Portfolio</title>
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085') no-repeat center center/cover;
+  background-attachment: fixed;
+  color:#fff;
+  line-height:1.6;
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.65);
+  z-index:-1;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(15,23,42,0.95);
+  padding:18px 40px;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+/* Create hidden underline */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: hwb(240 98% 1%);
+  transition: width 0.3s ease;
+}
+
+/* Animate on hover */
+nav a:hover::after {
+  width: 100%;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:bold;
+}
+
+nav ul{
+  display:flex;
+  gap:22px;
+  list-style:none;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+nav ul li a:hover{
+  color:#38bdf8;
+  transform:scale(1.05);
+}
+
+.menu-btn{
+  display:none;
+  font-size:28px;
+}
+
+section{
+  padding:80px 40px;
+}
+
+.hero,.iim{
+  text-align:center;
+  animation:fadeIn 1.5s ease;
+}
+
+.hero h1{
+  font-size:52px;
+}
+
+.hero span{
+  color:#38bdf8;
+}
+
+.about, .skills, .projects, .contact{
+  background:rgba(255,255,255,0.08);
+  margin:20px;
+  border-radius:20px;
+  backdrop-filter:blur(8px);
+}
+
+
+h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:20px;
+}
+
+.card{
+  padding:20px;
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:14px;
+  text-align:center;
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-8px) scale(1.03);
+}
+
+.project-list a{
+  display:block;
+  margin:12px 0;
+  color:#7dd3fc;
+  text-decoration:none;
+}
+
+.project-list a:hover{
+  text-decoration:underline;
+}
+
+form{
+  max-width:600px;
+  margin:auto;
+  display:grid;
+  gap:14px;
+}
+
+input, textarea, button{
+  padding:14px;
+  border:none;
+  border-radius:10px;
+}
+
+button{
+  background:#2563eb;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.03);
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(30px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+@media(max-width:768px){
+  .menu-btn{display:block;}
+  nav ul{
+    display:none;
+    flex-direction:column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Akilan Portfolio</div>
+    <div class="menu-btn">☰</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">My Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<section class="hero" id="home">
+  <img class="iim" src="/muimg.jpg" alt="Akilan's Profile " style="width:220px; height:220px; object-fit:cover; border-radius:50%; border:4px solid white; margin-bottom:20px; box-shadow:0 8px 20px rgba(0,0,0,0.3);">
+  <h1>Hello, I'm <span>Akilan</span></h1>
+  <p>Frontend Developer | Creative Designer | Problem Solver</p>
+</section>
+
+<section class="about" id="about">
+  <h2>About Me</h2>
+  <p>I’m a passionate Frontend Developer and MERN Stack learner with a strong foundation in building modern, responsive web applications. I specialize in HTML, CSS, JavaScript, Tailwind CSS, and React, and I also have programming experience in Java and Python, which helps me understand both frontend and backend logic effectively.
+<n>
+I’ve worked on projects like Portfolio websites, Routine OS, and Monetara, where I focused on creating user-friendly interfaces and clean, efficient code. My approach to development is centered around writing maintainable code and delivering smooth user experiences across different devices.
+
+I’m a fast learner, problem solver, and creative thinker, always eager to explore new technologies and improve my skills. Currently, I’m pursuing a B.Sc in Computer Science & Applications at VETIAS and completing a Java Full Stack Development course at Besant Technologies, aiming to start my career as a professional developer and contribute to real-world projects..</p>
+</section>
+
+<section class="skills" id="skills">
+  <h2>My Skills</h2>
+  <div class="skills-grid">
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">JavaScript</div>
+    <div class="card">Flexbox & Gridn</div>
+    <div class="card">Java</div>
+    <div class="card">Python</div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <h2>Projects</h2>
+  <table style="width:100%; border-collapse:collapse; margin-top:20px; text-align:center;">
+    <tr>
+      <th style="padding:14px; border:1px solid rgba(255,255,255,0.3);">Project Name</th>
+      <th style="padding:14px; border:1px solid rgba(255,255,255,0.3);">Technology</th>
+      <th style="padding:14px; border:1px solid rgba(255,255,255,0.3);">Project Link</th>
+    </tr>
+    <tr>
+      <td style="padding:14px; border:1px solid rgba(255,255,255,0.3);">Portfolio Website</td>
+      <td style="padding:14px; border:1px solid rgba(255,255,255,0.3);">HTML, CSS</td>
+      <td style="padding:14px; border:1px solid rgba(255,255,255,0.3);"><a href="https://google.com" target="_blank" style="color:#7dd3fc;">View Project</a></td>
+    </tr>
+    <tr>
+      <td style="padding:14px; border:1px solid rgba(255,255,255,0.3);">Routine OS</td>
+      <td style="padding:14px; border:1px solid rgba(255,255,255,0.3);">HTML, CSS, JavaScript</td>
+      <td style="padding:14px; border:1px solid rgba(255,255,255,0.3);"><a href="https://google.com" target="_blank" style="color:#7dd3fc;">View Project</a></td>
+    </tr>
+    <tr>
+      <td style="padding:14px; border:1px solid rgba(255,255,255,0.3);">Monetara</td>
+      <td style="padding:14px; border:1px solid rgba(255,255,255,0.3);">HTML, CSS, JavaScript</td>
+      <td style="padding:14px; border:1px solid rgba(255,255,255,0.3);"><a href="https://google.com" target="_blank" style="color:#7dd3fc;">View Project</a></td>
+    </tr>
+  </table>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Me</h2>
+  <form action="mailto:akilanselvaraj10@gmail.com" method="get" enctype="text/plain">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+</body>
+</html>
+
+
+
+
