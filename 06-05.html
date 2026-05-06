@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akilan Portfolio</title>
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-[url('https://images.unsplash.com/photo-1498050108023-c5249f4df085')] bg-cover bg-center bg-fixed text-white">
+
+<!-- Overlay -->
+<div class="fixed inset-0 bg-black/70 -z-10"></div>
+
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-slate-900/95 px-10 py-4">
+  <nav class="flex justify-between items-center">
+    
+    <div class="text-2xl font-bold">Akilan Portfolio</div>
+
+    <ul class="hidden md:flex gap-6">
+      <li><a href="#home" class="hover:text-sky-400 transition">Home</a></li>
+      <li><a href="#about" class="hover:text-sky-400 transition">About</a></li>
+      <li><a href="#skills" class="hover:text-sky-400 transition">Skills</a></li>
+      <li><a href="#projects" class="hover:text-sky-400 transition">Projects</a></li>
+      <li><a href="#contact" class="hover:text-sky-400 transition">Contact</a></li>
+    </ul>
+
+    <div class="md:hidden text-2xl">☰</div>
+
+  </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="text-center py-20 px-5">
+  
+  <img src="/muimg.jpg"
+       class="w-52 h-52 mx-auto rounded-full border-4 border-white shadow-lg object-cover mb-5">
+
+  <h1 class="text-4xl md:text-5xl font-bold">
+    Hello, I'm <span class="text-sky-400">Akilan</span>
+  </h1>
+
+  <p class="mt-3 text-lg text-gray-300">
+    Frontend Developer | Creative Designer | Problem Solver
+  </p>
+
+</section>
+
+<!-- About -->
+<section id="about" class="bg-white/10 backdrop-blur-md m-5 rounded-2xl p-10">
+  <h2 class="text-2xl text-center mb-5 font-semibold">About Me</h2>
+
+  <p class="text-gray-200 leading-relaxed">
+    I’m a passionate Frontend Developer and MERN Stack learner with a strong foundation in building modern, responsive web applications. 
+    I specialize in HTML, CSS, JavaScript, Tailwind CSS, and React. I’ve worked on projects like Portfolio websites, Routine OS, and Monetara.
+  </p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="bg-white/10 backdrop-blur-md m-5 rounded-2xl p-10">
+  <h2 class="text-2xl text-center mb-5 font-semibold">My Skills</h2>
+
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+    <div class="border border-white/30 rounded-xl p-5 text-center hover:-translate-y-2 hover:scale-105 transition">HTML</div>
+    <div class="border border-white/30 rounded-xl p-5 text-center hover:-translate-y-2 hover:scale-105 transition">CSS</div>
+    <div class="border border-white/30 rounded-xl p-5 text-center hover:-translate-y-2 hover:scale-105 transition">JavaScript</div>
+    <div class="border border-white/30 rounded-xl p-5 text-center hover:-translate-y-2 hover:scale-105 transition">Flexbox & Grid</div>
+    <div class="border border-white/30 rounded-xl p-5 text-center hover:-translate-y-2 hover:scale-105 transition">Java</div>
+    <div class="border border-white/30 rounded-xl p-5 text-center hover:-translate-y-2 hover:scale-105 transition">Python</div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="bg-white/10 backdrop-blur-md m-5 rounded-2xl p-10">
+  <h2 class="text-2xl text-center mb-5 font-semibold">Projects</h2>
+
+  <div class="overflow-x-auto">
+    <table class="w-full text-center border border-white/30">
+      <thead>
+        <tr class="bg-white/10">
+          <th class="p-3 border border-white/30">Project</th>
+          <th class="p-3 border border-white/30">Tech</th>
+          <th class="p-3 border border-white/30">Link</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td class="p-3 border border-white/30">Portfolio</td>
+          <td class="p-3 border border-white/30">HTML, CSS</td>
+          <td class="p-3 border border-white/30">
+            <a href="#" class="text-sky-400 hover:underline">View</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="p-3 border border-white/30">Routine OS</td>
+          <td class="p-3 border border-white/30">HTML, JS</td>
+          <td class="p-3 border border-white/30">
+            <a href="#" class="text-sky-400 hover:underline">View</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="p-3 border border-white/30">Monetara</td>
+          <td class="p-3 border border-white/30">HTML, JS</td>
+          <td class="p-3 border border-white/30">
+            <a href="#" class="text-sky-400 hover:underline">View</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div></section>
+
+<!-- Contact -->
+<section id="contact" class="bg-white/10 backdrop-blur-md m-5 rounded-2xl p-10">
+  <h2 class="text-2xl text-center mb-5 font-semibold">Contact Me</h2>
+
+  <form class="max-w-xl mx-auto grid gap-4">
+    <input type="text" placeholder="Your Name" class="p-3 rounded-lg text-black">
+    <input type="email" placeholder="Your Email" class="p-3 rounded-lg text-black">
+    <textarea placeholder="Message" class="p-3 rounded-lg text-black"></textarea>
+
+    <button class="bg-blue-600 hover:scale-105 transition p-3 rounded-lg">
+      Send Message
+    </button>
+  </form>
+</section>
+
+</body>
+</html>
+
