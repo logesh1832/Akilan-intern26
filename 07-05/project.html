@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Projects | Akilan Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[url('https://images.unsplash.com/photo-1498050108023-c5249f4df085')] bg-cover bg-center bg-fixed text-white">
+
+<div class="fixed inset-0 bg-black/70 -z-10"></div>
+
+<header class="sticky top-0 bg-slate-900/95 px-10 py-4">
+  <nav class="flex justify-between items-center">
+
+    <h1 class="text-2xl font-bold">Akilan Portfolio</h1>
+
+    <ul class="flex gap-6">
+      <li><a href="index.html" class="hover:text-sky-400">Home</a></li>
+      <li><a href="about.html" class="hover:text-sky-400">About</a></li>
+      <li><a href="skills.html" class="hover:text-sky-400">Skills</a></li>
+      <li><a href="contact.html" class="hover:text-sky-400">Contact</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+<section class="max-w-7xl mx-auto p-10">
+
+  <div class="bg-white/10 backdrop-blur-md rounded-3xl p-10">
+
+    <h2 class="text-4xl font-bold text-center mb-10 text-sky-400">
+      My Projects
+    </h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Project Card -->
+      <div class="bg-white/10 rounded-2xl overflow-hidden hover:scale-105 transition">
+
+        <img src="https://source.unsplash.com/400x250/?website"
+        class="w-full h-52 object-cover">
+
+        <div class="p-5">
+
+          <h3 class="text-2xl font-bold mb-3">
+            Portfolio Website
+          </h3>
+
+          <p class="text-gray-300 mb-4">
+            Modern responsive developer portfolio using Tailwind CSS.
+          </p>
+
+          <div class="flex gap-3 flex-wrap mb-5">
+            <span class="bg-sky-500/20 px-3 py-1 rounded-full text-sm">
+              HTML
+            </span>
+
+            <span class="bg-sky-500/20 px-3 py-1 rounded-full text-sm">
+              Tailwind
+            </span>
+          </div>
+
+          <div class="flex justify-between">
+            <a href="#" class="text-sky-400 hover:underline">
+              Live
+            </a>
+
+            <a href="#" class="text-sky-400 hover:underline">
+              GitHub
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Empty Space -->
+      <div class="border-2 border-dashed border-white/30 rounded-2xl flex items-center justify-center min-h-[350px] text-gray-400 text-xl">
+        Add New Project
+      </div>
+
+      <div class="border-2 border-dashed border-white/30 rounded-2xl flex items-center justify-center min-h-[350px] text-gray-400 text-xl">
+        Add New Project
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
